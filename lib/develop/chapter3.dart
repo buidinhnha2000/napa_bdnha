@@ -37,7 +37,7 @@ challenge3() {
 
 challenge4 () {
   // const name = 'Ray';
-  // name += ' Wenderlich';
+  // name = ' Wenderlich';
   // Hằng số const được khai báo biến có giá trị không thay đổi
 }
 challenge5() {
