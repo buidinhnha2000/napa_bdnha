@@ -16,17 +16,17 @@ random() {
   return element;
 }
 challenge2() {
-  final name = Name(surName: "Bui", givenName: "Dinh Nha", surnameIsFirst: false);
+  const name = Name(surName: "Bui", givenName: "Dinh Nha", surnameIsFirst: false);
   print(name);
 }
 class Name{
-  String givenName;
-  String surName;
-  bool surnameIsFirst;
-  Name({required this.surName, required this.givenName, required this.surnameIsFirst});
+  final String givenName;
+  final String surName;
+  final bool surnameIsFirst;
+  const Name({required this.surName, required this.givenName, required this.surnameIsFirst});
   @override
   String toString() {
-    if(this.surnameIsFirst == true){
+    if(surnameIsFirst == true){
       return '$surName $givenName';
     }
     return '$givenName $surName';
